@@ -27,7 +27,7 @@
         </div>
 
         <div class="executive-summary" itemprop="description">
-          <p>This is the executive summary. You should write a few brief, concise, and meaningful sentences about yourself from a professional context, and your immediate career goals. Make the length appropriate for your needs, but K.I.S.S.</p>
+          <p>Back-end programmer with a passion for the web. Creative thinker, problem solver, tech writer.</p>
         </div>
 
         {% if site.resume_looking_for_work == 'yes' %}
@@ -39,46 +39,25 @@
 
       </header>
 
-      {% if site.resume_section_experience %}
-      <!-- begin Experience -->
+      {% if site.resume_section_tech %}
+      <!-- begin Tech -->
       <section class="content-section">
 
         <header class="section-header">
-          <h2>Experience</h2>
+          <h2>Skills</h2>
         </header>
 
-        <!-- Duplicate these resume-item elements and edit accordingly for each job you want to add here -->
-        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
-          <h3 class="resume-item-title" itemprop="name">Springfield Nuclear Power Plant</h3>
-          <h4 class="resume-item-details" itemprop="description">Safety Inspector &bull; Nov, 1980 &mdash; Present</h4>
-          <p class="resume-item-copy">Write about your core competencies in one or two sentences describing your position. If you held the position for a long time, it could be a longer section, including a couple bullet points:</p>
-          <ul class="resume-item-list">
-            <li>Ate lots of donuts</li>
-            <li>Fell asleep rarely</li>
-            <li>Left promptly at end of day (sometimes earlier)</li>
-          </ul>
-          <p class="resume-item-copy">If you're going to copy paste markup, or edit it, just be sure to keep the appropriate classnames on your new elements for styling purposes.</p>
-
-        </div><!-- end of resume-item -->
-
-        <!-- another resume item -->
-        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
-          <h3 class="resume-item-title" itemprop="name">Sir Putt-A-Lot's Merrie Olde Fun Centre</h3>
-          <h4 class="resume-item-details" itemprop="description">Windmill Crank Operator &bull; Jun, 1978 &mdash; Sept, 1979</h4>
-          <p class="resume-item-copy">If your stint was shorter, feel free to be brief and just call out the most meaningful points of your role. Be concise, and be meaninful. The person reading just needs enough to want to talk to you more about your experience.</p>
-
-        </div><!-- end of resume-item -->
-
-        <!-- by now you're getting the picture... -->
-        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
-          <h3 class="resume-item-title" itemprop="name">Simpson Lazer Tag</h3>
-          <h4 class="resume-item-details" itemprop="description">Front Desk Attendant &bull; Jun, 1975 &mdash; May, 1978</h4>
-          <p class="resume-item-copy">Boy, when Marge first told me she was going to the Police Academy, I thought it would be fun and exciting, you know, like the movie... Spaceballs. But instead, it's been painful and disturbing, like the movie Police Academy.</p>
-
-        </div><!-- end of resume-item -->
+        <div class="resume-item">
+          <p class="resume-item-copy"><b>Languages</b></p>
+          <p class="resume-item-copy">Java, JavaScript, TypeScript, SQL</p>
+          <p class="resume-item-copy"><b>Frameworks and Servers</b></p>
+          <p class="resume-item-copy"> JavaEE, Spring Boot, Angular, Node.js, Deepstream.io, Appache HTTP, WildFly</p>
+          <p class="resume-item-copy"><b>Infra</b></p>
+          <p class="resume-item-copy">Ansible, Docker</p>
+        </div>
 
       </section>
-      <!-- end Experience -->
+      <!-- end Tech -->
       {% endif %}
 
       {% if site.resume_section_education %}
@@ -90,13 +69,60 @@
         </header>
 
         <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/CollegeOrUniversity">
-          <h3 class="resume-item-title" itemprop="name">Springfield College</h3>
-          <h4 class="resume-item-details" itemprop="description">Associates Degree, Business Management &bull; 1984 &mdash; 1986</h4>
-          <p class="resume-item-copy">If you had any meaningful roles at college, feel free to write about them here.</p>
+          <h3 class="resume-item-title" itemprop="name">Faculty of Law, University of Bucharest</h3>
+          <h4 class="resume-item-details" itemprop="description">Bachelor of Law &bull; 1999</h4>
+          <p class="resume-item-copy"></p>
         </div>
 
       </section>
       <!-- end Education -->
+      {% endif %}
+
+
+      {% if site.resume_section_experience %}
+      <!-- begin Experience -->
+      <section class="content-section">
+
+        <header class="section-header">
+          <h2>Work Experience</h2>
+        </header>
+
+        <!-- Duplicate these resume-item elements and edit accordingly for each job you want to add here -->
+        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
+          <h3 class="resume-item-title" itemprop="name">Kontomatik - Warsaw, Poland</h3>
+          <h4 class="resume-item-details" itemprop="description">Technical Support Lead&bull; March, 2016 &mdash; Present</h4>
+          <ul class="resume-item-list">
+            <li>Help clients understand and adopt Kontomatik technology for extracting account information and transactional data of end users from online banking systems</li>
+            <li>Provide fast tech support and guidance to client developers focused on debugging integration issues and emphasising best practices for Kontomatik API</li>
+            <li>Main contributor and project owner of Kontomatik <a href="https://developer.kontomatik.com/api-doc" target="a_blank">API docs</a> website</li> 
+            <li>Extended Kontomatik API library with a screen scraper implementation for ING Bank Romania (Java)</li>
+            <li>Fix Kontomatik Web Service bugs reported on the support channel</li>
+            <li>Wrote a command line Java application to parse Http logs and calculate conversion rate for the Kontomatik SignIn Widget</li>
+            <li>Wrote a proof-of-concept Google Chrome plugin to download PDF bank statements from PKO online bank (JavaScript)</li>
+          </ul>
+        </div><!-- end of resume-item -->
+
+        <!-- another resume item -->
+        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
+          <h3 class="resume-item-title" itemprop="name">Frank Communication - Bucharest, Romania</h3>
+          <h4 class="resume-item-details" itemprop="description">Creative Director &bull; April, 2015 &mdash; Feb, 2016</h4>
+          <ul class="resume-item-list">
+            <li>Led the effort to create and physically produce advertising campaigns for TV, print and online media.</li>
+          </ul>
+
+        </div><!-- end of resume-item -->
+
+        <!-- by now you're getting the picture... -->
+        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
+          <h3 class="resume-item-title" itemprop="name">Publicis Group - Bucharest, Romania</h3>
+          <h4 class="resume-item-details" itemprop="description">Senior Copywriter &bull; Feb, 2009 &mdash; May, 2012</h4>
+          <ul class="resume-item-list">
+            <li>Wrote TV scripts, headlines and slogans. Overseen production of TV, print and online content for a number of clients including Orange.</li>
+          </ul>
+        </div><!-- end of resume-item -->
+
+      </section>
+      <!-- end Experience -->
       {% endif %}
 
       {% if site.resume_section_projects %}
@@ -108,46 +134,24 @@
         </header>
 
         <div class="resume-item">
-          <h3 class="resume-item-title"><a href="http://donutlocator.io">donutfinder.io</a></h3>
-          <h4 class="resume-item-details">Founder & Primary Developer &bull; 2012 &mdash; Present</h4>
-          <p class="resume-item-copy">Donut Locator is an open source node/ember app that lets users find donuts within a defined radius from their home.</p>
+          <h3 class="resume-item-title">Codecritique</h3>  
+          <p class="resume-item-details"> Tech blog, code journal &bull; <a href="https://blog.codecritique.org/" target="a_blank">Codecritique</a></p>
         </div>
 
         <div class="resume-item">
-          <h3 class="resume-item-title">Springfield Donut Eater's User Group</h3>
-          <h4 class="resume-item-details">Co-Founder & Organizer &bull; 2007 &mdash; Present</h4>
-          <p class="resume-item-copy">DEUG is a local monthly meetup in Springfield where we share all the latest tips and tricks for dat donut lifestyle. I organize the group, and typically eat most of the donuts.</p>
+          <h3 class="resume-item-title">Thrifty</h3>  
+          <p class="resume-item-details">A CRUD web app</a> &bull; <a href="https://thrifty.codecritique.org/" target="a_blank">Thrifty</a></p>
+        </div>
+
+        <div class="resume-item">
+          <h3 class="resume-item-title">Connect Four</h3>  
+          <p class="resume-item-details">
+            Real-time browser game &bull; <a href="https://connectfour.codecritique.org/" target="a_blank">Connect Four</a>
+          </p>
         </div>
 
       </section>
       <!-- end Projects -->
-      {% endif %}
-
-      {% if site.resume_section_skills %}
-      <!-- begin Skills -->
-      <section class="content-section">
-
-        <header class="section-header">
-          <h2>Skills</h2>
-        </header>
-
-        <div class="resume-item">
-          <h4 class="resume-item-details">Donut design</h4>
-          <p class="resume-item-copy">Sprinkle art, icing design, eclair management, taste testing, donut/coffee pairing research</p>
-        </div>
-
-        <div class="resume-item">
-          <h4 class="resume-item-details">Craft beer brewing</h4>
-          <p class="resume-item-copy">Hops inspection, brew testing, distribution management, bottle label design, festival and event management</p>
-        </div>
-
-        <div class="resume-item">
-          <h4 class="resume-item-details">Family leadership</h4>
-          <p class="resume-item-copy">Bread winning, conflict resolution, couch inspection, TV longevity testing</p>
-        </div>
-
-      </section>
-      <!-- end Skills -->
       {% endif %}
 
       {% if site.resume_section_recognition %}
@@ -159,45 +163,52 @@
         </header>
 
         <div class="resume-item">
-          <h3 class="resume-item-title" itemprop="award">Springfield Nuclear Power Plant</h3>
+          <h3 class="resume-item-title" itemprop="award"></h3>
           <h4 class="resume-item-details">Outstanding Achievement &bull; 2010</h4>
-          <p class="resume-item-copy">Awarded for stopping a nuclear meltdown, even though I also started it.</p>
+          <p class="resume-item-copy"></p>
         </div>
 
         <div class="resume-item">
-          <h3 class="resume-item-title" itemprop="award">Duff Beer Customer of the year</h3>
+          <h3 class="resume-item-title" itemprop="award"></h3>
           <h4 class="resume-item-details">1997 &mdash; 2001, 2003, 2008 &mdash; 2012</h4>
-          <p class="resume-item-copy">Honored by <a href="https://en.wikipedia.org/wiki/Duff_Beer">Duff Beer</a> for being an outstanding customer several years straight. Qualifications included most beer consumed at a bar, most beer purchased, and most beer ralphed.</p>
+          <p class="resume-item-copy"></p>
         </div>
 
         <div class="resume-item">
-          <h3 class="resume-item-title" itemprop="award">Moe's Patron of the Month</h3>
+          <h3 class="resume-item-title" itemprop="award"></h3>
           <h4 class="resume-item-details">12/2001, 8/2004</h4>
-          <p class="resume-item-copy">Specifically this prestigious awarded twice for stopping a robber with my belly.</p>
+          <p class="resume-item-copy"></p>
         </div>
 
       </section>
       <!-- end Recognition -->
       {% endif %}
 
-      {% if site.resume_section_associations %}
+      {% if site.resume_section_books %}
       <!-- begin Associations -->
       <section class="content-section">
 
         <header class="section-header">
-          <h2>Associations</h2>
+          <h2>Books</h2>
         </header>
 
         <div class="resume-item">
-          <h3 class="resume-item-title"><a href="http://beerfortheworld.com">Beer for the World</a></h3>
-          <h4 class="resume-item-details">Volunteer &bull; 2008 &mdash; Present</h4>
-          <p class="resume-item-copy">Organized fund drives and participated in fundraising events for the benefit of families in third world countries without proper access to malt beverages.</p>
+          <h3 class="resume-item-title">Thinking in Java 4th Edition, Bruce Eckart</h3>
+          <h4 class="resume-item-details"></h4>
+          <p class="resume-item-copy">Excellent introduction into the depth, beauty and complexity of the Java world.</p>
         </div>
 
         <div class="resume-item">
-          <h3 class="resume-item-title">Springfield Nuclear Workers Labor Union</h3>
-          <h4 class="resume-item-details">Member in Good Standin &bull; 1994 &mdash; Present</h4>
-          <p class="resume-item-copy">Founding member of the local nuclear workers labor union.</p>
+          <h3 class="resume-item-title">Effective Java Second Edition, 2008, Joshua Bloch</h3>
+          <h4 class="resume-item-details"></h4>
+          <p class="resume-item-copy">Great compendium of best practices in Java programming. If only such easy-to-read code snippets were equally easy-to-write!</p>
+        </div>
+
+        <div class="resume-item">
+          <h3 class="resume-item-title">The Nature Of Code, Daniel Schiffman</h3>
+          <h4 class="resume-item-details"></h4>
+          <p class="resume-item-copy">Fascinating book. The first part introduces the novice reader to the fundamentals of 
+            object-oriented programming, then various approaches and techniques to produce computer simulations are discussed, linking together maths, physics and coding.</p>
         </div>
 
       </section>
@@ -224,8 +235,7 @@
       {% endif %}
 
       <footer class="page-footer">
-        <p class="footer-line">Made by <a href="http://twitter.com/jglovier">@jglovier</a>. Fork me on <a href="https://github.com/jglovier/resume-template">GitHub</a>.</p>
-        <p class="footer-line">If this is your live resume, you can modify or remove this part. ;-)</p>
+        <p class="footer-line">Thank you</p>
       </footer>
 
     </div>
