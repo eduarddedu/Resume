@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+  <link rel="stylesheet" href="assets/styles.css">
 
   {% include head.html %}
 
@@ -27,7 +28,7 @@
         </div>
 
         <div class="executive-summary" itemprop="description">
-          <p>Back-end programmer with a passion for the web. Creative thinker, problem solver, tech writer.</p>
+          <p>Full-stack programmer with a passion for the web. Creative thinker, problem solver, tech writer.</p>
         </div>
 
         {% if site.resume_looking_for_work == 'yes' %}
@@ -46,38 +47,54 @@
         <header class="section-header">
           <h2>Skills</h2>
         </header>
-
-        <div class="resume-item">
-          <p class="resume-item-copy"><b>Languages</b></p>
-          <p class="resume-item-copy">Java, JavaScript, TypeScript, SQL</p>
-          <p class="resume-item-copy"><b>Frameworks and Servers</b></p>
-          <p class="resume-item-copy"> JavaEE, Spring Boot, Angular, Node.js, Deepstream.io, Appache HTTP, WildFly</p>
-          <p class="resume-item-copy"><b>Infra</b></p>
-          <p class="resume-item-copy">Ansible, Docker</p>
-        </div>
-
+        <table>
+            <tr>
+              <th>Languages</th>
+              <th>Servers</th>
+              <th>SQL</th>
+              <th>Frameworks</th>
+              <th>Infra</th>
+            </tr>
+            <tr>
+              <td>Java JavaScript TypeScript</td>
+              <td>Apache WildFly</td>
+              <td>MySql Hibernate JPA JDBC</td>
+              <td>SpringBoot Angular Node Deepstream</td>
+              <td>Ansible Docker</td>
+            </tr>
+          </table>
       </section>
       <!-- end Tech -->
       {% endif %}
 
-      {% if site.resume_section_education %}
-      <!-- begin Education -->
+      {% if site.resume_section_projects %}
+      <!-- begin Projects -->
       <section class="content-section">
-
         <header class="section-header">
-          <h2>Education</h2>
+          <h2>Projects</h2>
         </header>
-
-        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/CollegeOrUniversity">
-          <h3 class="resume-item-title" itemprop="name">Faculty of Law, University of Bucharest</h3>
-          <h4 class="resume-item-details" itemprop="description">Bachelor of Law &bull; 1999</h4>
-          <p class="resume-item-copy"></p>
+        <div class="resume-item">
+          <h3 class="resume-item-title"><a href="https://blog.codecritique.org/" target="a_blank">codecritique.org</a></h3>
+          <p class="resume-item-details"> Tech blog, code journal</p>
         </div>
-
+        <div class="resume-item">
+          <h3 class="resume-item-title"><a href="https://thrifty.codecritique.org/" target="a_blank">Thrifty</a></h3>  
+          <p class="resume-item-details">A CRUD app &bull; JAX-RS, JPA, Hibernate, Angular 6</p>
+        </div>
+        <div class="resume-item">
+          <h3 class="resume-item-title"><a href="https://connectfour.codecritique.org/" target="a_blank">Connect Four</a></h3>  
+          <p class="resume-item-details">
+            Real-time browser game &bull; Angular 6, WebSockets</p>
+        </div>
+        <div class="resume-item">
+          <h3 class="resume-item-title"><a href="https://codecritique.org/regextool" target="a_blank">RegexTool</a></h3>
+          <p class="resume-item-details">
+              A GUI tool to test and store Java regular expressions &bull; SpringBoot, Thymeleaf
+          </p>
+        </div>
       </section>
-      <!-- end Education -->
+      <!-- end Projects -->
       {% endif %}
-
 
       {% if site.resume_section_experience %}
       <!-- begin Experience -->
@@ -125,34 +142,24 @@
       <!-- end Experience -->
       {% endif %}
 
-      {% if site.resume_section_projects %}
-      <!-- begin Projects -->
+      {% if site.resume_section_education %}
+      <!-- begin Education -->
       <section class="content-section">
 
         <header class="section-header">
-          <h2>Projects</h2>
+          <h2>Education</h2>
         </header>
 
-        <div class="resume-item">
-          <h3 class="resume-item-title">Codecritique</h3>  
-          <p class="resume-item-details"> Tech blog, code journal &bull; <a href="https://blog.codecritique.org/" target="a_blank">Codecritique</a></p>
-        </div>
-
-        <div class="resume-item">
-          <h3 class="resume-item-title">Thrifty</h3>  
-          <p class="resume-item-details">A CRUD web app</a> &bull; <a href="https://thrifty.codecritique.org/" target="a_blank">Thrifty</a></p>
-        </div>
-
-        <div class="resume-item">
-          <h3 class="resume-item-title">Connect Four</h3>  
-          <p class="resume-item-details">
-            Real-time browser game &bull; <a href="https://connectfour.codecritique.org/" target="a_blank">Connect Four</a>
-          </p>
+        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/CollegeOrUniversity">
+          <h3 class="resume-item-title" itemprop="name">Faculty of Law, University of Bucharest</h3>
+          <h4 class="resume-item-details" itemprop="description">Bachelor of Law &bull; 1999</h4>
+          <p class="resume-item-copy"></p>
         </div>
 
       </section>
-      <!-- end Projects -->
+      <!-- end Education -->
       {% endif %}
+
 
       {% if site.resume_section_recognition %}
       <!-- begin Recognition -->
